@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Calculadora</title>
+    <h2 id="info" class="grande" title="Info sobre el número">Info sobre el número</h2>
+
+    <script type="text/javascript">
+        const vaciar = () => {
+            document.getElementById("nº1").value = "";
+        }
+        const cuadrado = () => {
+            let num = document.getElementById("nº1");
+            num.value = num.value * num.value;
+        }
+        const elevarCubo = () => {
+            let num = document.getElementById("nº1");
+            num.value = num.value * num.value * num.value;
+        }
+    </script>
+</head>
+
+<body>
+
+    Número:
+    <input type="text" id="nº1" onclick="vaciar()"><br><br>
+    <button onclick="cuadrado()"> x <sup>2</sup></button>
+    <button onclick="elevarCubo()"> x <sup>3</sup></button>
+</body>
+
+</html>
